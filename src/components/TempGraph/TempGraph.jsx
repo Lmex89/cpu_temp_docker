@@ -29,7 +29,7 @@ const TempGraph = () => {
   const [data, setData] = useState([]);
   const [core, setCore] = useState(0);
 
-  const endPoint = `http://back.servicecloudlmex.co/api/v1/temp_list/?view=code&code=core_${core}`;
+  const endPoint = `https://back.servicecloudlmex.co/api/v1/temp_list/?view=code&code=core_${core}`;
 
   useEffect(() => {
     getData(endPoint, setData);

@@ -26,7 +26,7 @@ ChartJS.register(
 
 const RamGraph = () => {
   const [data, setData] = useState([]);
-  const endPoint = `http://back.servicecloudlmex.co/api/v1/temp_list/?view=code&code=core_0`;
+  const endPoint = `https://back.servicecloudlmex.co/api/v1/temp_list/?view=code&code=core_0`;
 
   useEffect(() => {
     getData(endPoint, setData);

@@ -31,8 +31,8 @@ const CoreGraph = () => {
 
   const endPoint =
     core >= 4
-      ? `http://back.servicecloudlmex.co/api/v1/cpu_load`
-      : `http://back.servicecloudlmex.co/api/v1/cpu_load?code=core_${core}`;
+      ? `https://back.servicecloudlmex.co/api/v1/cpu_load`
+      : `https://back.servicecloudlmex.co/api/v1/cpu_load?code=core_${core}`;
 
   useEffect(() => {
     getData(endPoint, setData);
