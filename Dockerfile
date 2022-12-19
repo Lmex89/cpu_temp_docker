@@ -9,7 +9,6 @@ RUN apt-get -y install autoconf automake libtool nasm make pkg-config git apt-ut
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
-
 # Install app dependencies
 COPY package.json /usr/src/app/
 COPY package-lock.json /usr/src/app/
